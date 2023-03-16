@@ -1,10 +1,9 @@
 ﻿using Isbm2Client.Interface;
 using Isbm2Client.Model;
 using Isbm2Client.Service;
-using Isbm2RestClient.Api;
-using Isbm2RestClient.Client;
 using Microsoft.Extensions.Options;
 using RestClient = Isbm2RestClient.Client;
+using RestApi = Isbm2RestClient.Api;
 
 namespace Isbm2Client.Integration.Test;
 
@@ -42,10 +41,11 @@ public class RequestConsumerFixture : IAsyncLifetime
             BasePath = Config.Value.EndPoint
         };
 
-        var requestApi = new ConsumerRequestServiceApi(apiConfig);
+        var providerApi = new RestApi.ProviderRequestServiceApi(apiConfig);
+        var consumerApi = new RestApi.ConsumerRequestServiceApi(apiConfig);
 
-        Provider = new RestProviderRequest(Config);
-        Consumer = new RestConsumerRequest(requestApi);
+        Provider = new RestProviderRequest(providerApi);
+        Consumer = new RestConsumerRequest(consumerApi);
     }
 
     public async Task DisposeAsync()

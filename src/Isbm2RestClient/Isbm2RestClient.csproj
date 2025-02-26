@@ -6,17 +6,18 @@
     <AssemblyName>Isbm2RestClient</AssemblyName>
     <PackageId>Isbm2RestClient</PackageId>
     <OutputType>Library</OutputType>
-    <Authors>OpenAPI</Authors>
-    <Company>OpenAPI</Company>
-    <AssemblyTitle>OpenAPI Library</AssemblyTitle>
-    <Description>A library generated from a OpenAPI doc</Description>
-    <Copyright>No Copyright</Copyright>
+    <Authors>Matt Selway</Authors>
+    <Company>MIMOSA</Company>
+    <AssemblyTitle>ISBMv2 Rest Client</AssemblyTitle>
+    <Description>REST implementation of a .Net Core library for OpenO&amp;M ISBM v2 Clients</Description>
+    <Copyright>Copyright &#169; 2025 Asset Institute, Assetricity, pitt&amp;sherry, Synengco, University of South Australia</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RootNamespace>Isbm2RestClient</RootNamespace>
-    <Version>1.0.0</Version>
+    <Version>0.1.0</Version>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Isbm2RestClient.xml</DocumentationFile>
-    <RepositoryUrl>https://github.com/GIT_USER_ID/GIT_REPO_ID.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/mimosa-org/isbm2-client-dotnet.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Minor update</PackageReleaseNotes>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
     <Nullable>annotations</Nullable>
   </PropertyGroup>
 

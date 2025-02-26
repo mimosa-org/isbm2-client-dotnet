@@ -13,6 +13,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <PackageId>Isbm2Client</PackageId>
+    <Title>ISBMv2 Client</Title>
+    <Description>A .Net Core library for OpenO&amp;M ISBM v2 Clients</Description>
+    <Version>0.1.0</Version>
+    <Authors>Matt Selway</Authors>
+    <Company>MIMOSA</Company>
+    <Copyright>Copyright &#169; 2025 Asset Institute, Assetricity, pitt&amp;sherry, Synengco, University of South Australia</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/mimosa-org/isbm2-client-dotnet.git</RepositoryUrl>
   </PropertyGroup>
 
 </Project>

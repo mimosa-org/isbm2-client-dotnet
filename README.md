@@ -64,6 +64,7 @@ package to the NuGet registry:
    ```
 4. ```bat
    dotnet nuget push "src/Isbm2Client/bin/Release/Isbm2Client.VERSION.nupkg" --api-key %GH_TOKEN% --source "github-mimosa-org"
+   dotnet nuget push "src/Isbm2RestClient/bin/Release/Isbm2RestClient.VERSION.nupkg" --api-key %GH_TOKEN% --source "github-mimosa-org"
    ```
    where `VERSION` is replaced with the version number being published.
 

@@ -18,7 +18,7 @@ FROM build AS publish
 RUN dotnet publish "IsbmClientExample.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
-LABEL org.opencontainers.image.source https://github.com/tmr-imd/Isbm2RestClient
+LABEL org.opencontainers.image.source=https://github.com/mimosa-org/isbm2-client-dotnet
 WORKDIR /app
 COPY --from=publish --chown=appuser /app/publish .
 RUN find /app -type d -exec chmod 750 {} + ; \
